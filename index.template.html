@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Acervo didático | Heitor Cardoso Fernandes</title>
+<meta name="description" content="Aulas, apostilas e exercícios comentados de Heitor Cardoso Fernandes. Consulte os temas, abra os PDFs e conheça os materiais preparados para o ensino de exatas.">
+<meta name="theme-color" content="#193b32">
+<style>
+:root { --paper:#f6f5f0; --white:#fffefa; --ink:#193b32; --text:#293c35; --muted:#5b6b62; --green:#286250; --line:#d7ded5; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:24px; }
+body { margin:0; color:var(--text); background:var(--paper); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+a { color:var(--green); text-underline-offset:4px; }
+button,input { font:inherit; }
+button { cursor:pointer; }
+:focus-visible { outline:3px solid #a65332; outline-offset:4px; }
+.wrap { width:min(1120px,calc(100% - 64px)); margin:auto; }
+.skip { position:fixed; left:15px; top:-100px; z-index:5; background:white; padding:12px; }
+.skip:focus { top:12px; }
+header { border-bottom:1px solid var(--line); }
+.topbar { display:flex; justify-content:space-between; align-items:center; gap:28px; padding:23px 0; }
+.brand { color:var(--ink); text-decoration:none; }
+.brand strong { display:block; font-size:15px; }
+.brand small { color:var(--muted); font-size:12px; }
+nav { display:flex; gap:24px; }
+nav a { font-size:14px; text-decoration:none; min-height:44px; display:flex; align-items:center; }
+.hero { max-width:800px; padding:55px 0 42px; }
+.eyebrow { text-transform:uppercase; letter-spacing:.12em; font-size:12px; font-weight:700; color:var(--green); margin:0 0 15px; }
+h1 { font:500 clamp(36px,4.5vw,57px)/1.08 Georgia,serif; color:var(--ink); letter-spacing:-.03em; margin:0 0 20px; }
+.lead { color:var(--muted); font-size:18px; margin:0; max-width:710px; }
+.catalog-top { border-top:1px solid var(--line); padding:22px 0; display:flex; justify-content:space-between; align-items:baseline; gap:20px; }
+h2 { font-size:20px; color:var(--ink); margin:0; }
+.count { font-size:13px; color:var(--muted); margin:0; }
+.search-label { display:block; font-size:13px; font-weight:600; margin-bottom:6px; }
+.search { width:min(100%,520px); min-height:46px; border:1px solid #b9c8bc; border-radius:8px; padding:10px 14px; background:var(--white); color:var(--text); margin-bottom:25px; }
+.filters { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px; }
+.filter { min-height:44px; border:1px solid var(--line); border-radius:24px; padding:8px 16px; background:transparent; color:var(--green); font-size:13px; }
+.filter[aria-pressed="true"] { background:var(--ink); color:white; border-color:var(--ink); }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.kit { border:1px solid var(--line); border-radius:15px; background:var(--white); overflow:hidden; display:flex; flex-direction:column; min-width:0; }
+.kit[hidden] { display:none; }
+.preview { display:block; background:#e8ece5; padding:18px 18px 0; height:265px; overflow:hidden; border-bottom:1px solid var(--line); }
+.preview img { display:block; width:100%; height:100%; object-fit:cover; object-position:top; box-shadow:0 1px 9px #193b3212; }
+.kit-content { padding:25px 28px 27px; display:flex; flex:1; flex-direction:column; }
+.label { color:var(--green); font-size:11px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; margin:0 0 10px; }
+h3 { color:var(--ink); font:500 29px/1.16 Georgia,serif; letter-spacing:-.02em; margin:0 0 15px; }
+.summary { color:var(--muted); font-size:15px; margin:0 0 18px; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0; margin:0 0 22px; }
+.tags li { font-size:11px; border:1px solid var(--line); padding:3px 8px; border-radius:5px; color:var(--muted); }
+.actions { display:flex; gap:11px; flex-wrap:wrap; margin-top:auto; }
+.button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:10px 15px; border:1px solid var(--green); border-radius:7px; font-size:14px; font-weight:600; text-decoration:none; background:var(--green); color:white; }
+.button.secondary { background:transparent; color:var(--green); }
+.empty { border:1px solid var(--line); padding:22px; border-radius:8px; }
+.about { display:grid; grid-template-columns:1fr 2fr; gap:50px; margin-top:50px; padding:35px 0 50px; border-top:1px solid var(--line); }
+.about h2 { font:500 28px/1.2 Georgia,serif; }
+.about p { margin:0 0 13px; font-size:14px; color:var(--muted); }
+footer { background:var(--ink); color:#edf3e9; padding:26px 0; }
+footer .wrap { display:flex; justify-content:space-between; align-items:center; gap:20px; }
+footer strong { font-size:14px; }
+footer a { color:#edf3e9; font-size:13px; }
+dialog { width:min(880px,calc(100% - 32px)); max-height:calc(100dvh - 30px); padding:0; border:1px solid #b9c8bc; border-radius:14px; color:var(--text); background:var(--white); }
+dialog::backdrop { background:#10271db3; }
+.dialog-top { position:sticky; top:0; background:var(--white); display:flex; justify-content:space-between; align-items:center; padding:10px 23px; border-bottom:1px solid var(--line); z-index:2; }
+.dialog-top span { font-size:12px; color:var(--muted); }
+.close { width:44px; height:44px; border:1px solid var(--line); border-radius:50%; font-size:25px; background:white; color:var(--ink); }
+.dialog-body { padding:27px 32px 33px; }
+.dialog-body h2 { font:500 35px/1.16 Georgia,serif; margin-bottom:15px; }
+.dialog-body h3 { font:650 15px/1.4 system-ui,sans-serif; margin:23px 0 9px; }
+.dialog-body p,.dialog-body li { font-size:15px; }
+.dialog-body ul { padding-left:20px; }
+.materials { display:flex; flex-direction:column; gap:10px; }
+.material { display:flex; justify-content:space-between; align-items:center; gap:15px; padding:14px 16px; border:1px solid var(--line); border-radius:8px; text-decoration:none; min-height:52px; }
+.material span { font-size:15px; font-weight:600; }
+.material small { white-space:nowrap; color:var(--muted); font-size:12px; }
+.credit { border-top:1px solid var(--line); margin-top:25px; padding-top:16px; color:var(--muted); font-size:12px!important; }
+@media(max-width:720px) {
+ .wrap { width:calc(100% - 36px); }
+ .topbar { gap:16px; padding:17px 0; }
+ .brand strong { font-size:12px; }
+ .brand small { font-size:11px; }
+ nav { gap:13px; }
+ nav a { font-size:12px; }
+ .extra-nav { display:none; }
+ .hero { padding:38px 0 32px; }
+ h1 { font-size:39px; }
+ .lead { font-size:16px; }
+ .catalog-top { align-items:flex-start; }
+ h2 { font-size:18px; }
+ .count { font-size:11px; text-align:right; }
+ .grid { grid-template-columns:1fr; gap:20px; }
+ .preview { height:225px; }
+ .kit-content { padding:23px; }
+ h3 { font-size:28px; }
+ .about { grid-template-columns:1fr; gap:18px; margin-top:32px; padding:29px 0 34px; }
+ footer .wrap { flex-direction:column; align-items:flex-start; gap:12px; }
+ dialog { width:calc(100% - 18px); }
+ .dialog-body { padding:23px 19px; }
+ .dialog-body h2 { font-size:29px; }
+ .dialog-top { padding:9px 16px; }
+ .material { align-items:flex-start; }
+ .material span { font-size:14px; }
+ .material small { font-size:11px; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#materiais">Ir para os materiais</a>
+<header><div class="wrap topbar"><a class="brand" href="#inicio"><strong>Heitor Cardoso Fernandes</strong><small>Acervo didático</small></a><nav aria-label="Navegação principal"><a href="#materiais">Materiais</a><a class="extra-nav" href="#sobre">Sobre</a><a href="https://heitorxr.github.io/acervo-estatistica/" target="_blank" rel="noopener noreferrer">Projetos ↗</a></nav></div></header>
+<main class="wrap" id="inicio">
+<section class="hero"><p class="eyebrow">Ensino de exatas</p><h1>Aulas para compreender<br>e estudar com autonomia.</h1><p class="lead">Planos, apostilas, exercícios comentados e apresentações de apoio. Consulte os temas de cada conjunto e abra os materiais completos em PDF.</p></section>
+<section id="materiais" aria-labelledby="catalog-title"><div class="catalog-top"><h2 id="catalog-title">Materiais didáticos</h2><p class="count" id="result-count" role="status">__COUNT_LABEL__</p></div><label class="search-label" for="search">Buscar por tema</label><input class="search" id="search" type="search" placeholder="Ex.: derivadas, limites, Taylor" autocomplete="off"><div class="filters" role="group" aria-label="Filtrar por área">__FILTERS__</div><div class="grid" id="grid">__CARDS__</div><p class="empty" id="empty" hidden>Nenhum conjunto encontrado para essa busca.</p></section>
+<section class="about" id="sobre"><h2>Conceitos, exemplos<br>e resoluções.</h2><div><p>Este acervo reúne materiais de Heitor Cardoso Fernandes para aulas e estudo de exatas. Cada conjunto agrupa o documento principal e seus complementos; versões anteriores e cópias de trabalho não aparecem como aulas diferentes.</p><p>Os materiais apresentam explicações, exemplos resolvidos e atividades de consulta. Os créditos registrados nos documentos foram preservados. Livros e arquivos de terceiros usados como fonte de preparação não são redistribuídos aqui.</p></div></section>
+</main>
+<footer><div class="wrap"><strong>Heitor Cardoso Fernandes · Acervo didático</strong><a href="https://heitorxr.github.io/acervo-estatistica/" target="_blank" rel="noopener noreferrer">Conhecer os projetos de análise de dados ↗</a></div></footer>
+<dialog id="kit-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span>Acervo didático · Heitor Cardoso Fernandes</span><button class="close" id="close" aria-label="Fechar conjunto" type="button">×</button></div><div class="dialog-body" id="dialog-body"></div></dialog>
+<script id="catalog-data" type="application/json">__CATALOG__</script>
+<script>
+'use strict';
+const kits=JSON.parse(document.getElementById('catalog-data').textContent);
+const dialog=document.getElementById('kit-dialog');
+const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const normalized=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+let activeArea='all';
+function openKit(id){
+ const k=kits.find(k=>k.id===id);if(!k)return;
+ document.getElementById('dialog-body').innerHTML=`<p class="label">${escapeHtml(k.label)} · ${escapeHtml(k.audience)}</p><h2 id="detail-title">${escapeHtml(k.title)}</h2><p>${escapeHtml(k.summary)}</p><h3>Temas abordados</h3><ul>${k.topics.map(t=>`<li>${escapeHtml(t)}</li>`).join('')}</ul><h3>Conhecimentos prévios</h3><p>${escapeHtml(k.prerequisites)}</p><h3>Abrir os materiais</h3><div class="materials">${k.materials.map(m=>`<a class="material" href="${escapeHtml(m.file)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(m.label)} ↗</span><small>PDF · ${m.pages} ${m.pages===1?'página':'páginas'}</small></a>`).join('')}</div><p class="credit">${escapeHtml(k.credit)}</p>`;
+ if(!dialog.open)dialog.showModal();dialog.scrollTop=0;history.replaceState(null,'','#aula-'+k.id);
+}
+function closeKit(){dialog.close();history.replaceState(null,'','#materiais');}
+document.querySelectorAll('[data-kit]').forEach(b=>b.addEventListener('click',()=>openKit(b.dataset.kit)));
+document.getElementById('close').addEventListener('click',closeKit);
+dialog.addEventListener('cancel',e=>{e.preventDefault();closeKit();});
+dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeKit();});
+function filterKits(){
+ const q=normalized(document.getElementById('search').value);let count=0;
+ document.querySelectorAll('.kit').forEach(c=>{c.hidden=!normalized(c.dataset.search).includes(q)||(activeArea!=='all'&&c.dataset.area!==activeArea);if(!c.hidden)count++;});
+ document.getElementById('result-count').textContent=count+' '+(count===1?'conjunto':'conjuntos')+' de materiais';
+ document.getElementById('empty').hidden=count>0;
+}
+document.getElementById('search').addEventListener('input',filterKits);
+document.querySelectorAll('[data-area-filter]').forEach(button=>button.addEventListener('click',()=>{
+ activeArea=button.dataset.areaFilter;
+ document.querySelectorAll('[data-area-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ filterKits();
+}));
+if(location.hash.startsWith('#aula-'))openKit(location.hash.slice(6));
+</script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+[
+  {
+    "id": "calculo-1-fundamentos",
+    "title": "Cálculo 1: funções, limites e continuidade",
+    "label": "Aulão 1 de Cálculo 1",
+    "area": "Cálculo",
+    "audience": "Estudantes de graduação",
+    "summary": "Introdução a funções, continuidade e limites, com gráficos, exercícios e uma primeira abordagem da derivada pela definição.",
+    "topics": [
+      "Domínio, contradomínio e imagem",
+      "Continuidade e leitura de gráficos",
+      "Limites laterais, fatoração e racionalização",
+      "Limites no infinito",
+      "Derivada pela definição"
+    ],
+    "prerequisites": "Álgebra e funções elementares.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/calculo-1-fundamentos.pdf",
+        "label": "Aula completa",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "calculo-1-derivadas",
+    "title": "Cálculo 1: derivadas e aplicações",
+    "label": "Aulão 2 de Cálculo 1",
+    "area": "Cálculo",
+    "audience": "Estudantes de graduação",
+    "summary": "Uma revisão que parte do significado da derivada e avança para regras de cálculo, extremos, esboço de curvas e aproximações. Os exemplos têm gráficos e resoluções comentadas.",
+    "topics": [
+      "Continuidade e interpretação da derivada",
+      "Definição, potência e regras de derivação",
+      "Função inversa e derivadas trigonométricas",
+      "Derivação implícita",
+      "Extremos, concavidade e esboço de curvas",
+      "L’Hôpital e polinômios de Taylor"
+    ],
+    "prerequisites": "Álgebra básica, funções e limites.",
+    "credit": "O material registra a inspiração no material didático da professora Evelin. Os exercícios extras foram elaborados para esta aula. Os PDFs de apoio usados como fonte não são redistribuídos neste acervo.",
+    "materials": [
+      {
+        "file": "pdfs/calculo-1-derivadas-aula-completa.pdf",
+        "label": "Aula completa",
+        "primary": true
+      },
+      {
+        "file": "pdfs/calculo-1-derivadas-exercicios-extras.pdf",
+        "label": "Exercícios extras com resoluções"
+      },
+      {
+        "file": "pdfs/calculo-1-derivadas-tabela-fundamentais.pdf",
+        "label": "Tabela de derivadas fundamentais"
+      },
+      {
+        "file": "pdfs/calculo-1-derivadas-concavidade.pdf",
+        "label": "Concavidade e esboço de curvas"
+      },
+      {
+        "file": "pdfs/calculo-1-derivadas-taylor.pdf",
+        "label": "Taylor de graus superiores"
+      }
+    ]
+  },
+  {
+    "id": "calculo-multivariado",
+    "title": "Funções de várias variáveis",
+    "label": "Aula teórica de Cálculo multivariado",
+    "area": "Cálculo",
+    "audience": "Estudantes de graduação",
+    "summary": "Estudo de domínios, curvas e superfícies de nível, derivadas direcionais e problemas de máximos e mínimos, com explicações e exemplos.",
+    "topics": [
+      "Domínio em duas variáveis",
+      "Curvas e superfícies de nível",
+      "Derivadas direcionais",
+      "Máximos e mínimos"
+    ],
+    "prerequisites": "Funções e cálculo diferencial em uma variável.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/calculo-multivariado.pdf",
+        "label": "Aula completa",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "integracao-multivariada",
+    "title": "Integrais múltiplas, de linha e de superfície",
+    "label": "Sequência de duas aulas",
+    "area": "Cálculo",
+    "audience": "Estudantes de graduação",
+    "summary": "Duas aulas com montagem de integrais, mudanças de coordenadas e integração em campos vetoriais. A segunda retoma e desenvolve os exemplos da primeira.",
+    "topics": [
+      "Integrais duplas e triplas",
+      "Coordenadas polares e cilíndricas",
+      "Parametrização de caminhos",
+      "Integrais de linha e de superfície"
+    ],
+    "prerequisites": "Cálculo diferencial e integral e noções de vetores.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/integracao-multivariada-aula-1.pdf",
+        "label": "Aula 1",
+        "primary": true
+      },
+      {
+        "file": "pdfs/integracao-multivariada-aula-2.pdf",
+        "label": "Aula 2",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "tecnicas-integracao",
+    "title": "Técnicas de integração e aproximação linear",
+    "label": "Questões extras comentadas",
+    "area": "Cálculo",
+    "audience": "Estudantes de graduação",
+    "summary": "Lista de questões e resoluções sobre integrais fundamentais, aproximação linear e técnicas de integração. O documento pode ser consultado como material complementar.",
+    "topics": [
+      "Integrais fundamentais",
+      "Aproximação linear",
+      "Técnicas de integração",
+      "Exercícios comentados"
+    ],
+    "prerequisites": "Derivadas e integrais elementares.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/tecnicas-integracao-extras.pdf",
+        "label": "Questões extras com resoluções",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "geometria-analitica",
+    "title": "Vetores no plano e no espaço",
+    "label": "Geometria Analítica",
+    "area": "Matemática",
+    "audience": "Estudantes de graduação",
+    "summary": "Aula que parte da interpretação de vetores como deslocamentos e desenvolve operações, dependência linear e produtos entre vetores.",
+    "topics": [
+      "Vetores em R² e R³",
+      "Operações e dependência linear",
+      "Produto escalar e projeções",
+      "Produto vetorial e áreas",
+      "Produto misto e volumes"
+    ],
+    "prerequisites": "Álgebra e coordenadas cartesianas.",
+    "credit": "Material de Heitor Cardoso Fernandes, baseado nas Listas 1, 2 e 3 de CMI012 – Geometria Analítica, conforme crédito do documento.",
+    "materials": [
+      {
+        "file": "pdfs/geometria-analitica-vetores.pdf",
+        "label": "Aula completa",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "nivelamento-algebra",
+    "title": "Manipulação algébrica básica",
+    "label": "Nivelamento de Matemática",
+    "area": "Matemática",
+    "audience": "Nivelamento para a graduação",
+    "summary": "Revisão de operações em equações e frações, destinada a estudantes que precisam retomar a base matemática antes de avançar nas disciplinas de exatas.",
+    "topics": [
+      "Igualdades e operações nos dois membros",
+      "Manipulação de equações",
+      "Operações com frações"
+    ],
+    "prerequisites": "Operações aritméticas.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/nivelamento-algebra.pdf",
+        "label": "Aula de nivelamento",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "funcoes-olimpiadas",
+    "title": "Funções e desafios de composição",
+    "label": "Preparação olímpica · POTI",
+    "area": "Matemática",
+    "audience": "Preparação para olimpíadas de Matemática",
+    "summary": "Aula de funções acompanhada de desafios resolvidos sobre composição, inversão e iterações de funções afins.",
+    "topics": [
+      "Domínio, contradomínio e imagem",
+      "Composição e função inversa",
+      "Funções pares e ímpares",
+      "Involuções e iterações afins"
+    ],
+    "prerequisites": "Álgebra e funções elementares.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/funcoes-olimpiadas-aula.pdf",
+        "label": "Aula sobre funções",
+        "primary": true
+      },
+      {
+        "file": "pdfs/funcoes-olimpiadas-desafios.pdf",
+        "label": "Desafios com resoluções",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "fundamentos-funcoes-mecanica",
+    "title": "Funções, leis de Newton e estática",
+    "label": "Sequência de Matemática e Física",
+    "area": "Matemática e Física",
+    "audience": "Reforço de ensino médio",
+    "summary": "Sequência de aulas que combina revisão de funções e álgebra com dinâmica e estática. Inclui um complemento com frações e equações.",
+    "topics": [
+      "Revisão algébrica e funções",
+      "Forças e leis de Newton",
+      "Dinâmica e plano inclinado",
+      "Estática e máquinas simples",
+      "Funções afins e quadráticas"
+    ],
+    "prerequisites": "Aritmética e álgebra elementar.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/funcoes-mecanica-aula-1.pdf",
+        "label": "Aula 1 — Funções e leis de Newton",
+        "primary": true
+      },
+      {
+        "file": "pdfs/funcoes-mecanica-aula-2.pdf",
+        "label": "Aula 2 — Dinâmica",
+        "primary": false
+      },
+      {
+        "file": "pdfs/funcoes-mecanica-algebra-dinamica.pdf",
+        "label": "Complemento — Álgebra e dinâmica",
+        "primary": false
+      },
+      {
+        "file": "pdfs/funcoes-mecanica-aula-3.pdf",
+        "label": "Aula 3 — Estática",
+        "primary": false
+      },
+      {
+        "file": "pdfs/funcoes-mecanica-aula-4.pdf",
+        "label": "Aula 4 — Funções e segundo grau",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "cinematica-dinamica",
+    "title": "Cinemática e dinâmica",
+    "label": "Sequência de duas aulas de Física",
+    "area": "Física",
+    "audience": "Estudantes de ensino médio",
+    "summary": "Aulas sobre descrição do movimento e aplicação das leis de Newton, com situações resolvidas e exercícios.",
+    "topics": [
+      "Referencial, posição e deslocamento",
+      "Velocidade e aceleração",
+      "Movimentos uniformes e acelerados",
+      "Leis de Newton e tipos de força"
+    ],
+    "prerequisites": "Álgebra elementar e interpretação de grandezas.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/cinematica-dinamica-aula-1.pdf",
+        "label": "Aula 1 — Cinemática",
+        "primary": true
+      },
+      {
+        "file": "pdfs/cinematica-dinamica-aula-2.pdf",
+        "label": "Aula 2 — Dinâmica",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "estatica-equilibrio",
+    "title": "Estática e equilíbrio de corpos",
+    "label": "Forças, momentos e apoios",
+    "area": "Física",
+    "audience": "Estudo de mecânica e equilíbrio",
+    "summary": "Aula com diagramas de corpo livre, equilíbrio de partículas e corpos rígidos, momentos de força e reações em apoios, com problemas em duas e três dimensões.",
+    "topics": [
+      "Leis de Newton e equilíbrio",
+      "Diagramas de corpo livre",
+      "Momentos de força",
+      "Apoios e reações",
+      "Problemas em 2D e 3D"
+    ],
+    "prerequisites": "Vetores e conceitos de força.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/estatica-equilibrio.pdf",
+        "label": "Aula completa",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "matematica-concursos",
+    "title": "Matemática básica para concursos",
+    "label": "Sequência de quatro aulas e revisão",
+    "area": "Matemática",
+    "audience": "Preparação para concursos",
+    "summary": "Revisão de frações, equações, regras de três e sistemas, com exercícios de fixação. Os documentos incluem recortes preparatórios para TRE/AC e TJPR.",
+    "topics": [
+      "Frações e equações do primeiro grau",
+      "Gráficos e regra de três",
+      "Dízimas periódicas e frações geratrizes",
+      "Sistemas de equações",
+      "Equações do segundo grau"
+    ],
+    "prerequisites": "Operações aritméticas.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/matematica-concursos-aula-1.pdf",
+        "label": "Aula 1 — Frações e equações",
+        "primary": true
+      },
+      {
+        "file": "pdfs/matematica-concursos-aula-2.pdf",
+        "label": "Aula 2 — Exercícios e regra de três",
+        "primary": false
+      },
+      {
+        "file": "pdfs/matematica-concursos-aula-3.pdf",
+        "label": "Aula 3 — Dízimas e sistemas",
+        "primary": false
+      },
+      {
+        "file": "pdfs/matematica-concursos-aula-4.pdf",
+        "label": "Aula 4 — Revisão para TJPR",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "trigonometria-pitagoras",
+    "title": "Arcos, radianos, trigonometria e Pitágoras",
+    "label": "Geometria e trigonometria",
+    "area": "Matemática",
+    "audience": "Estudantes de ensino médio",
+    "summary": "Aula com conversão de medidas angulares, comprimento de arco, área de setor e leitura do ciclo trigonométrico, seguida de problemas com o teorema de Pitágoras.",
+    "topics": [
+      "Graus e radianos",
+      "Arcos e setores circulares",
+      "Seno, cosseno e tangente",
+      "Sinais por quadrante",
+      "Teorema de Pitágoras"
+    ],
+    "prerequisites": "Álgebra e geometria elementar.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/trigonometria-pitagoras.pdf",
+        "label": "Aula completa",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "eletricidade-ohm-kirchhoff",
+    "title": "Leis de Ohm e de Kirchhoff",
+    "label": "Aula e exercícios de eletricidade",
+    "area": "Física",
+    "audience": "Estudo de eletricidade",
+    "summary": "Apresentação sobre aplicação das leis de Kirchhoff e uma lista de exercícios de Lei de Ohm, com problemas de corrente, resistência e potência.",
+    "topics": [
+      "Corrente, resistência e tensão",
+      "Lei de Ohm e resistividade",
+      "Leis dos nós e das malhas",
+      "Análise de circuitos"
+    ],
+    "prerequisites": "Álgebra e conceitos elementares de eletricidade.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/eletricidade-kirchhoff.pdf",
+        "label": "Aplicando as leis de Kirchhoff",
+        "primary": true
+      },
+      {
+        "file": "pdfs/eletricidade-ohm-exercicios.pdf",
+        "label": "Exercícios sobre a Lei de Ohm",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "magnetismo-circuitos",
+    "title": "Materiais magnéticos e circuitos LC/RLC",
+    "label": "Eletromagnetismo",
+    "area": "Física",
+    "audience": "Estudo de Física em nível superior",
+    "summary": "Materiais de estudo sobre resposta magnética da matéria e circuitos oscilatórios, com modelos e exemplos de circuitos LC e RLC.",
+    "topics": [
+      "Diamagnetismo, paramagnetismo e ferromagnetismo",
+      "Circuito LC ideal",
+      "Oscilações elétricas",
+      "Circuito RLC e fonte externa"
+    ],
+    "prerequisites": "Eletricidade, magnetismo e cálculo.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
+    "materials": [
+      {
+        "file": "pdfs/materiais-magneticos.pdf",
+        "label": "Materiais magnéticos",
+        "primary": true
+      },
+      {
+        "file": "pdfs/circuitos-lc-rlc.pdf",
+        "label": "Circuitos LC e RLC",
+        "primary": false
+      }
+    ]
+  },
+  {
+    "id": "jamovi",
+    "title": "Introdução ao jamovi",
+    "label": "Apresentação acadêmica de apoio",
+    "area": "Estatística",
+    "audience": "Material introdutório de estatística",
+    "summary": "Apresentação sobre o jamovi, seus recursos, público-alvo, vantagens e limitações. É um material de apoio, não um plano de aula.",
+    "topics": [
+      "O que é o jamovi",
+      "Público e aplicações",
+      "Recursos de análise estatística",
+      "Vantagens e limitações"
+    ],
+    "prerequisites": "Noções de estatística.",
+    "credit": "Apresentação acadêmica de Heitor Cardoso Fernandes. Mantém as referências do documento original.",
+    "kind": "apresentacao",
+    "materials": [
+      {
+        "file": "pdfs/introducao-jamovi.pdf",
+        "label": "Apresentação completa",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "rotacoes-simetria",
+    "title": "Rotações e simetria",
+    "label": "Apresentação acadêmica de apoio",
+    "area": "Matemática",
+    "audience": "Material de apoio em geometria",
+    "summary": "Apresentação de geometria sobre rotações e simetrias, incluindo o tetraedro e a bipirâmide triangular. Está identificada separadamente dos planos de aula.",
+    "topics": [
+      "Rotações e simetrias",
+      "Simetria no tetraedro",
+      "Simetria na bipirâmide triangular"
+    ],
+    "prerequisites": "Noções de geometria.",
+    "credit": "Apresentação acadêmica de Heitor Cardoso Fernandes. As referências originais foram preservadas.",
+    "kind": "apresentacao",
+    "materials": [
+      {
+        "file": "pdfs/rotacoes-simetria.pdf",
+        "label": "Apresentação completa",
+        "primary": true
+      }
+    ]
+  }
+]

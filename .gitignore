@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+*.log
+qa/
+curation-plan.json
+preparation-report.json
+local.json

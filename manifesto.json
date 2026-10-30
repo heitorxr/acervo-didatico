@@ -1,0 +1,170 @@
+{
+  "kits": 17,
+  "pdfs": [
+    {
+      "file": "pdfs/calculo-1-fundamentos.pdf",
+      "pages": 19,
+      "sha256": "1c4b501ff391f2bb08e8cd29f0894b834d30ef30744a636e9b43bcb962c47ece"
+    },
+    {
+      "file": "pdfs/calculo-1-derivadas-aula-completa.pdf",
+      "pages": 30,
+      "sha256": "819aefee2df2dda17ee9f32994eda3a2a2cd77189693ef009b2defd4d0ab3959"
+    },
+    {
+      "file": "pdfs/calculo-1-derivadas-exercicios-extras.pdf",
+      "pages": 4,
+      "sha256": "eccd57ba4d71a7b44a49a8ef70746d7389fef8c954dc4637d4887e7b473b2714"
+    },
+    {
+      "file": "pdfs/calculo-1-derivadas-tabela-fundamentais.pdf",
+      "pages": 1,
+      "sha256": "09104001344fbc556cd5bf1382c320e6cc56e4d6e38de0f0587f74678d4afcb6"
+    },
+    {
+      "file": "pdfs/calculo-1-derivadas-concavidade.pdf",
+      "pages": 1,
+      "sha256": "003a1eb3207de32a7ae0775cf2d372f51cbd0c6ff1d0b39d1c0eb9e646849777"
+    },
+    {
+      "file": "pdfs/calculo-1-derivadas-taylor.pdf",
+      "pages": 1,
+      "sha256": "c8e47a86fae97969ec6a5e5363cf81cb566c1ae2c0565926c6ae325bec0c653a"
+    },
+    {
+      "file": "pdfs/calculo-multivariado.pdf",
+      "pages": 19,
+      "sha256": "33e0ab0ef4eed53cda9aa560c9ba54656fa675ca1a01e678d35746b717e1591b"
+    },
+    {
+      "file": "pdfs/integracao-multivariada-aula-1.pdf",
+      "pages": 20,
+      "sha256": "0ddd1a22291ce5b475e58f52026c062a7b759f99daa9e5a1bee2a5a460719503"
+    },
+    {
+      "file": "pdfs/integracao-multivariada-aula-2.pdf",
+      "pages": 14,
+      "sha256": "3e71d9a090a2a8afb1a913d597794e586b6004f5ba9a4aa7ddceea08b8a16e27"
+    },
+    {
+      "file": "pdfs/tecnicas-integracao-extras.pdf",
+      "pages": 13,
+      "sha256": "a771f10d3a8a2d8d3706d9c4ab85648593d632def43a263c310375f7ba117f80"
+    },
+    {
+      "file": "pdfs/geometria-analitica-vetores.pdf",
+      "pages": 15,
+      "sha256": "191a018699bfadd99eb4397a86920cb6abf991a745cda256dab08b9a086a6a23"
+    },
+    {
+      "file": "pdfs/nivelamento-algebra.pdf",
+      "pages": 3,
+      "sha256": "82f254c5da098e074b13ad0160d2734458a96dbf6122c31824a61c9f02167387"
+    },
+    {
+      "file": "pdfs/funcoes-olimpiadas-aula.pdf",
+      "pages": 7,
+      "sha256": "84f9c54d3fee17cade8ccd8e0a108f652fb851fba4e60bfbf705c129a8d6443d"
+    },
+    {
+      "file": "pdfs/funcoes-olimpiadas-desafios.pdf",
+      "pages": 5,
+      "sha256": "d77609dbd841385e19669b2b2ec072c422d4468c68badbf632bf2ef880f986b4"
+    },
+    {
+      "file": "pdfs/funcoes-mecanica-aula-1.pdf",
+      "pages": 7,
+      "sha256": "d0d0daf7ff714a38bce028a7f0adc950b57c6e31c0e5cf10b9035dbe7bbcacb2"
+    },
+    {
+      "file": "pdfs/funcoes-mecanica-aula-2.pdf",
+      "pages": 9,
+      "sha256": "96e68c6246d5fc2233d2b54766e6ab6dacbfae80d09c3978e2430cb3cbc34f0a"
+    },
+    {
+      "file": "pdfs/funcoes-mecanica-algebra-dinamica.pdf",
+      "pages": 14,
+      "sha256": "25122b2af7ff1a3c6a64f5dc69322346fdc878b2aa749c5f9e0c48297f8f96fb"
+    },
+    {
+      "file": "pdfs/funcoes-mecanica-aula-3.pdf",
+      "pages": 10,
+      "sha256": "0ed5e7bd0a3787e842607c32478273123594b194e64003ddb5f04602e9d25d7f"
+    },
+    {
+      "file": "pdfs/funcoes-mecanica-aula-4.pdf",
+      "pages": 6,
+      "sha256": "60706d5c2b64fbea4541659f22518dfed3255c3dd5586c10e7b9837f8fb536f7"
+    },
+    {
+      "file": "pdfs/cinematica-dinamica-aula-1.pdf",
+      "pages": 5,
+      "sha256": "a5ef963631d97a400efe666d31a9494516c9614596fa9e78d52a9367f6ca8c89"
+    },
+    {
+      "file": "pdfs/cinematica-dinamica-aula-2.pdf",
+      "pages": 9,
+      "sha256": "af096ecd7405e3b6b9a249df938914df1a93df45bddcfa3029acb35717fa4f61"
+    },
+    {
+      "file": "pdfs/estatica-equilibrio.pdf",
+      "pages": 9,
+      "sha256": "3856e055cec07b29daf9871a56aff2b3cc6424676df80aebf2fb5faa2db66f9e"
+    },
+    {
+      "file": "pdfs/matematica-concursos-aula-1.pdf",
+      "pages": 4,
+      "sha256": "e70ccaac743502395159e91627f2e64de5c210f062c6f2a336733b160aeaae4b"
+    },
+    {
+      "file": "pdfs/matematica-concursos-aula-2.pdf",
+      "pages": 6,
+      "sha256": "e2140a9e58a01c234efd15dfed4ebe1c4a9e80ba6ef98ea73d65751d1c826e66"
+    },
+    {
+      "file": "pdfs/matematica-concursos-aula-3.pdf",
+      "pages": 14,
+      "sha256": "25226b24fca52072c1f82db79036772bd484424ae3470d7a509f5045e0e8ab83"
+    },
+    {
+      "file": "pdfs/matematica-concursos-aula-4.pdf",
+      "pages": 14,
+      "sha256": "b94cf3801ccce540434e0fa6ed1366c96d7b7ee6341589308a515e2ce2d266e4"
+    },
+    {
+      "file": "pdfs/trigonometria-pitagoras.pdf",
+      "pages": 19,
+      "sha256": "860541d13139b136773405187fd51ac288e698b502361fa58edc517527087745"
+    },
+    {
+      "file": "pdfs/eletricidade-kirchhoff.pdf",
+      "pages": 10,
+      "sha256": "8d0e8870911a6cbfb2882c60796829622a5a97544db25418910c303ccff3637c"
+    },
+    {
+      "file": "pdfs/eletricidade-ohm-exercicios.pdf",
+      "pages": 2,
+      "sha256": "cfa14aa5c3cbd6902911114565b618a385ca6f3adb2795d1e33723c7919270b4"
+    },
+    {
+      "file": "pdfs/materiais-magneticos.pdf",
+      "pages": 3,
+      "sha256": "cf79ffdf4f7c91453d02760e24bebec38113fb363468de324af39033f029989f"
+    },
+    {
+      "file": "pdfs/circuitos-lc-rlc.pdf",
+      "pages": 13,
+      "sha256": "8c6357c486fe0ce1e48c0bb7ef23032a06edaa824c3342ebc1a6bd71836f1c0c"
+    },
+    {
+      "file": "pdfs/introducao-jamovi.pdf",
+      "pages": 16,
+      "sha256": "75f333c80ef18794b3a5866bad165857cc76456c8bce01fbb8803e9a6f4f0c13"
+    },
+    {
+      "file": "pdfs/rotacoes-simetria.pdf",
+      "pages": 102,
+      "sha256": "1f423458aa76ca292a2cc3041638e9951e4a8912bfada810f3003a747ec7488d"
+    }
+  ]
+}
