@@ -201,7 +201,7 @@
   {
     "id": "funcoes-olimpiadas",
     "title": "Funções e desafios de composição",
-    "label": "Preparação olímpica · POTI",
+    "label": "Aula 1 POTI e desafios de composição",
     "area": "Matemática",
     "audience": "Preparação para olimpíadas de Matemática",
     "summary": "Aula de funções acompanhada de desafios resolvidos sobre composição, inversão e iterações de funções afins.",
@@ -227,6 +227,145 @@
     ],
     "level": "Matemática olímpica",
     "level_reason": "Desafios POTI explicitamente identificados: involuções, iterações de funções afins, provas e contraexemplos."
+  },
+  {
+    "id": "poti-aula-2-quadraticas",
+    "title": "Funções quadráticas e revisão de funções",
+    "label": "Aula 2 POTI e lista complementar",
+    "area": "Matemática",
+    "audience": "Preparação para olimpíadas de Matemática — POTI",
+    "summary": "Revisão de paridade, composição e inversão de funções, seguida de equações quadráticas, dedução de Bhaskara, discriminante, soma e produto. A lista complementar também traz exercícios de polinômios.",
+    "topics": [
+      "Funções pares e ímpares",
+      "Composição, identidade e inversa",
+      "Dedução de Bhaskara e discriminante",
+      "Soma e produto das raízes",
+      "Lista complementar: quadráticas e polinômios"
+    ],
+    "prerequisites": "Álgebra elementar e conceitos de função.",
+    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Na lista, o crédito de organização foi acrescentado por autorização do autor; foram preservadas as indicações SBM, OBMEP, ITA e UECE.",
+    "materials": [
+      {
+        "file": "pdfs/poti-aula-2-quadraticas.pdf",
+        "label": "Aula 2 — Revisão e funções quadráticas",
+        "primary": true
+      },
+      {
+        "file": "pdfs/poti-lista-quadraticas-polinomios.pdf",
+        "label": "Lista complementar — Quadráticas e polinômios",
+        "primary": false
+      }
+    ],
+    "level": "Matemática olímpica",
+    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+  },
+  {
+    "id": "poti-aula-3-girard",
+    "title": "Relações de Girard e raízes de polinômios",
+    "label": "Aula 3 POTI",
+    "area": "Matemática",
+    "audience": "Preparação para olimpíadas de Matemática — POTI",
+    "summary": "Dedução das relações entre raízes e coeficientes em graus 2 e 3, generalização, revisão de somatórios e exemplos de aplicação. A aula encerra com uma introdução aos números complexos.",
+    "topics": [
+      "Raízes e coeficientes",
+      "Relações de Girard em graus 2 e 3",
+      "Generalização e somatórios",
+      "Exemplos e preparação para números complexos"
+    ],
+    "prerequisites": "Equações quadráticas, soma e produto e operações com polinômios.",
+    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
+    "materials": [
+      {
+        "file": "pdfs/poti-aula-3-girard.pdf",
+        "label": "Aula 3 — Relações de Girard",
+        "primary": true
+      }
+    ],
+    "level": "Matemática olímpica",
+    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+  },
+  {
+    "id": "poti-aula-4-complexos",
+    "title": "Números complexos e aplicações olímpicas",
+    "label": "Aula 4 POTI",
+    "area": "Matemática",
+    "audience": "Preparação para olimpíadas de Matemática — POTI",
+    "summary": "Aula sobre forma algébrica, operações, conjugado, plano complexo, módulo e argumento. Desenvolve as formas trigonométrica e exponencial, De Moivre, raízes da unidade e aplicações geométricas.",
+    "topics": [
+      "Forma algébrica e operações",
+      "Conjugado, módulo e argumento",
+      "Formas trigonométrica e exponencial",
+      "De Moivre e raízes n-ésimas",
+      "Rotações e raízes da unidade"
+    ],
+    "prerequisites": "Álgebra, produtos notáveis, trigonometria elementar e coordenadas cartesianas.",
+    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
+    "materials": [
+      {
+        "file": "pdfs/poti-aula-4-complexos.pdf",
+        "label": "Aula 4 — Números complexos",
+        "primary": true
+      }
+    ],
+    "level": "Matemática olímpica",
+    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+  },
+  {
+    "id": "poti-recorrencias",
+    "title": "Relações de recorrência, telescopagem e indução",
+    "label": "POTI — Nível 3",
+    "area": "Matemática",
+    "audience": "Preparação para olimpíadas de Matemática — POTI",
+    "summary": "A partir de um problema da Olimpíada Brasileira de Matemática, a aula constrói recorrências, desenrola produtos e somas telescópicas e relaciona o método à indução. O ZIP de origem tinha o nome regressão, mas o conteúdo é de recorrências.",
+    "topics": [
+      "Condições iniciais e recorrências",
+      "Produtos e somas telescópicos",
+      "Indução matemática",
+      "Transformação por ponto fixo",
+      "Recorrências com mais de um termo"
+    ],
+    "prerequisites": "Álgebra, sequências e operações com somatórios e produtos.",
+    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Crédito nominal acrescentado por autorização do autor; preservada a referência à XX Olimpíada Brasileira de Matemática, Problema 5.",
+    "materials": [
+      {
+        "file": "pdfs/poti-recorrencias.pdf",
+        "label": "Aula — Relações de recorrência",
+        "primary": true
+      }
+    ],
+    "level": "Matemática olímpica",
+    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+  },
+  {
+    "id": "poti-simulados-algebra",
+    "title": "Simulados de álgebra e resoluções — versões de trabalho",
+    "label": "POTI · materiais de avaliação em revisão",
+    "area": "Matemática",
+    "audience": "Preparação para olimpíadas de Matemática — POTI",
+    "summary": "Dois documentos distintos: um simulado com cinco questões e resoluções das questões 11 e 15 de outro simulado. Versões históricas de trabalho, com pontos que exigem revisão antes do uso como avaliação ou gabarito final.",
+    "topics": [
+      "Polinômios e divisibilidade",
+      "Funções periódicas",
+      "Raízes, coeficientes e relações algébricas",
+      "Somas parciais e recorrências",
+      "Revisão pendente de hipóteses e enunciados"
+    ],
+    "prerequisites": "Funções, polinômios, equações quadráticas e sequências.",
+    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. VERSÕES DE TRABALHO — revisão matemática pendente. No simulado de cinco questões, a questão 4 pressupõe três raízes reais incompatíveis com as demais condições. Nas resoluções do outro simulado, a questão 15 determina os valores nos inteiros positivos, mas não uma função única em todos os reais. Os documentos são de simulados distintos: as resoluções não são o gabarito das cinco questões.",
+    "materials": [
+      {
+        "file": "pdfs/poti-simulado-algebra.pdf",
+        "label": "Simulado — Cinco questões de álgebra (em revisão)",
+        "primary": true
+      },
+      {
+        "file": "pdfs/poti-simulado-resolucoes.pdf",
+        "label": "Outro simulado — Resoluções das questões 11 e 15 (em revisão)",
+        "primary": false
+      }
+    ],
+    "level": "Matemática olímpica",
+    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
   },
   {
     "id": "fundamentos-funcoes-mecanica",

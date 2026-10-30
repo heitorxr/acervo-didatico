@@ -1,5 +1,5 @@
 {
-  "kits": 15,
+  "kits": 20,
   "pdfs": [
     {
       "file": "pdfs/calculo-1-fundamentos.pdf",
@@ -70,6 +70,41 @@
       "file": "pdfs/funcoes-olimpiadas-desafios.pdf",
       "pages": 5,
       "sha256": "d77609dbd841385e19669b2b2ec072c422d4468c68badbf632bf2ef880f986b4"
+    },
+    {
+      "file": "pdfs/poti-aula-2-quadraticas.pdf",
+      "pages": 4,
+      "sha256": "f39f37270c106d62e941d118bc535d4c25b26a3bbea899cded1f00ca81863344"
+    },
+    {
+      "file": "pdfs/poti-lista-quadraticas-polinomios.pdf",
+      "pages": 2,
+      "sha256": "fd7cb889bb0acaff80f3b810c9d12b0bf1bcb42b4bdc7f5d891ac34f3bbf250f"
+    },
+    {
+      "file": "pdfs/poti-aula-3-girard.pdf",
+      "pages": 7,
+      "sha256": "09e01fa4b413de1af7c8e2617d6b41228c2407f64df7538b3b044814f6d44dae"
+    },
+    {
+      "file": "pdfs/poti-aula-4-complexos.pdf",
+      "pages": 20,
+      "sha256": "af64ed73e9d43c9d9589b931e8495e1e82d5fd73b84c48eee1912d1115b680aa"
+    },
+    {
+      "file": "pdfs/poti-recorrencias.pdf",
+      "pages": 10,
+      "sha256": "e85043829088529b2adab02f43a94a697c21ad1a9261aff60a6bf2992700e98b"
+    },
+    {
+      "file": "pdfs/poti-simulado-algebra.pdf",
+      "pages": 2,
+      "sha256": "e0599ba32e6496241dceaebed3182b5b6f6deba1da1ab4aee918609e75efaac7"
+    },
+    {
+      "file": "pdfs/poti-simulado-resolucoes.pdf",
+      "pages": 5,
+      "sha256": "a3ebd69caf71019d90d453e34b62825e724580fff97a0e104166b0b700ff254b"
     },
     {
       "file": "pdfs/funcoes-mecanica-aula-1.pdf",
