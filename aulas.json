@@ -21,7 +21,9 @@
         "label": "Aula completa",
         "primary": true
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Limites, continuidade e derivada pela definição, inclusive limites laterais e no infinito."
   },
   {
     "id": "calculo-1-derivadas",
@@ -62,7 +64,9 @@
         "file": "pdfs/calculo-1-derivadas-taylor.pdf",
         "label": "Taylor de graus superiores"
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Derivação implícita, L’Hôpital, concavidade e Taylor, com exercícios de cálculo diferencial."
   },
   {
     "id": "calculo-multivariado",
@@ -85,7 +89,9 @@
         "label": "Aula completa",
         "primary": true
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Domínios em duas variáveis, derivadas direcionais, superfícies de nível e extremos."
   },
   {
     "id": "integracao-multivariada",
@@ -113,7 +119,9 @@
         "label": "Aula 2",
         "primary": false
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Integrais múltiplas, jacobianos, campos vetoriais e teoremas de Green, Stokes e divergência."
   },
   {
     "id": "tecnicas-integracao",
@@ -136,7 +144,9 @@
         "label": "Questões extras com resoluções",
         "primary": true
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Integrais definidas, substituição, integração por partes e aproximação linear."
   },
   {
     "id": "geometria-analitica",
@@ -160,7 +170,9 @@
         "label": "Aula completa",
         "primary": true
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Dependência linear, projeções e produtos vetorial e misto em R³; referência à disciplina CMI012."
   },
   {
     "id": "nivelamento-algebra",
@@ -182,7 +194,9 @@
         "label": "Aula de nivelamento",
         "primary": true
       }
-    ]
+    ],
+    "level": "Ensino médio / básico",
+    "level_reason": "Operações nos dois membros, equações e frações. Embora destinado a graduandos, o conteúdo é de nivelamento básico."
   },
   {
     "id": "funcoes-olimpiadas",
@@ -210,7 +224,9 @@
         "label": "Desafios com resoluções",
         "primary": false
       }
-    ]
+    ],
+    "level": "Matemática olímpica",
+    "level_reason": "Desafios POTI explicitamente identificados: involuções, iterações de funções afins, provas e contraexemplos."
   },
   {
     "id": "fundamentos-funcoes-mecanica",
@@ -254,7 +270,9 @@
         "label": "Aula 4 — Funções e segundo grau",
         "primary": false
       }
-    ]
+    ],
+    "level": "Ensino médio / básico",
+    "level_reason": "Revisão de frações e funções, segundo grau, leis de Newton, forças e equilíbrio no plano."
   },
   {
     "id": "cinematica-dinamica",
@@ -282,7 +300,9 @@
         "label": "Aula 2 — Dinâmica",
         "primary": false
       }
-    ]
+    ],
+    "level": "Ensino médio / básico",
+    "level_reason": "Referencial, deslocamento, movimento uniforme e acelerado, forças, atrito e molas, sem cálculo diferencial."
   },
   {
     "id": "estatica-equilibrio",
@@ -306,7 +326,9 @@
         "label": "Aula completa",
         "primary": true
       }
-    ]
+    ],
+    "level": "Universitário",
+    "level_reason": "Equilíbrio em 3D, momentos por produto vetorial, projeção em eixos e reações de apoios estruturais."
   },
   {
     "id": "matematica-concursos",
@@ -345,7 +367,9 @@
         "label": "Aula 4 — Revisão para TJPR",
         "primary": false
       }
-    ]
+    ],
+    "level": "Ensino médio / básico",
+    "level_reason": "Frações, regras de três, dízimas, sistemas e equações do segundo grau; preparação para concursos, não para olimpíadas."
   },
   {
     "id": "trigonometria-pitagoras",
@@ -369,7 +393,9 @@
         "label": "Aula completa",
         "primary": true
       }
-    ]
+    ],
+    "level": "Ensino médio / básico",
+    "level_reason": "O documento declara nível Ensino Médio e aborda radianos, ciclo trigonométrico e Pitágoras. Questões-desafio não bastam para identificá-lo como cursinho olímpico."
   },
   {
     "id": "eletricidade-ohm-kirchhoff",
@@ -397,81 +423,33 @@
         "label": "Exercícios sobre a Lei de Ohm",
         "primary": false
       }
-    ]
+    ],
+    "level": "Ensino médio / básico",
+    "level_reason": "Leis de Ohm e Kirchhoff aplicadas a resistores e malhas por equações algébricas, sem equações diferenciais."
   },
   {
     "id": "magnetismo-circuitos",
-    "title": "Materiais magnéticos e circuitos LC/RLC",
-    "label": "Eletromagnetismo",
+    "title": "Circuitos LC e RLC",
+    "label": "Circuitos oscilatórios",
     "area": "Física",
     "audience": "Estudo de Física em nível superior",
-    "summary": "Materiais de estudo sobre resposta magnética da matéria e circuitos oscilatórios, com modelos e exemplos de circuitos LC e RLC.",
+    "summary": "Estudo dos circuitos LC e RLC, com equações diferenciais, oscilações livres e forçadas, amortecimento e ressonância.",
     "topics": [
-      "Diamagnetismo, paramagnetismo e ferromagnetismo",
       "Circuito LC ideal",
-      "Oscilações elétricas",
-      "Circuito RLC e fonte externa"
+      "Equações diferenciais de segunda ordem",
+      "Amortecimento",
+      "Circuito RLC com fonte externa e ressonância"
     ],
     "prerequisites": "Eletricidade, magnetismo e cálculo.",
     "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
     "materials": [
       {
-        "file": "pdfs/materiais-magneticos.pdf",
-        "label": "Materiais magnéticos",
-        "primary": true
-      },
-      {
         "file": "pdfs/circuitos-lc-rlc.pdf",
         "label": "Circuitos LC e RLC",
-        "primary": false
-      }
-    ]
-  },
-  {
-    "id": "jamovi",
-    "title": "Introdução ao jamovi",
-    "label": "Apresentação acadêmica de apoio",
-    "area": "Estatística",
-    "audience": "Material introdutório de estatística",
-    "summary": "Apresentação sobre o jamovi, seus recursos, público-alvo, vantagens e limitações. É um material de apoio, não um plano de aula.",
-    "topics": [
-      "O que é o jamovi",
-      "Público e aplicações",
-      "Recursos de análise estatística",
-      "Vantagens e limitações"
-    ],
-    "prerequisites": "Noções de estatística.",
-    "credit": "Apresentação acadêmica de Heitor Cardoso Fernandes. Mantém as referências do documento original.",
-    "kind": "apresentacao",
-    "materials": [
-      {
-        "file": "pdfs/introducao-jamovi.pdf",
-        "label": "Apresentação completa",
         "primary": true
       }
-    ]
-  },
-  {
-    "id": "rotacoes-simetria",
-    "title": "Rotações e simetria",
-    "label": "Apresentação acadêmica de apoio",
-    "area": "Matemática",
-    "audience": "Material de apoio em geometria",
-    "summary": "Apresentação de geometria sobre rotações e simetrias, incluindo o tetraedro e a bipirâmide triangular. Está identificada separadamente dos planos de aula.",
-    "topics": [
-      "Rotações e simetrias",
-      "Simetria no tetraedro",
-      "Simetria na bipirâmide triangular"
     ],
-    "prerequisites": "Noções de geometria.",
-    "credit": "Apresentação acadêmica de Heitor Cardoso Fernandes. As referências originais foram preservadas.",
-    "kind": "apresentacao",
-    "materials": [
-      {
-        "file": "pdfs/rotacoes-simetria.pdf",
-        "label": "Apresentação completa",
-        "primary": true
-      }
-    ]
+    "level": "Universitário",
+    "level_reason": "Circuitos LC/RLC por equações diferenciais de segunda ordem, amortecimento, solução forçada e ressonância."
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "kits": 17,
+  "kits": 15,
   "pdfs": [
     {
       "file": "pdfs/calculo-1-fundamentos.pdf",
@@ -147,24 +147,9 @@
       "sha256": "cfa14aa5c3cbd6902911114565b618a385ca6f3adb2795d1e33723c7919270b4"
     },
     {
-      "file": "pdfs/materiais-magneticos.pdf",
-      "pages": 3,
-      "sha256": "cf79ffdf4f7c91453d02760e24bebec38113fb363468de324af39033f029989f"
-    },
-    {
       "file": "pdfs/circuitos-lc-rlc.pdf",
       "pages": 13,
       "sha256": "8c6357c486fe0ce1e48c0bb7ef23032a06edaa824c3342ebc1a6bd71836f1c0c"
-    },
-    {
-      "file": "pdfs/introducao-jamovi.pdf",
-      "pages": 16,
-      "sha256": "75f333c80ef18794b3a5866bad165857cc76456c8bce01fbb8803e9a6f4f0c13"
-    },
-    {
-      "file": "pdfs/rotacoes-simetria.pdf",
-      "pages": 102,
-      "sha256": "1f423458aa76ca292a2cc3041638e9951e4a8912bfada810f3003a747ec7488d"
     }
   ]
 }

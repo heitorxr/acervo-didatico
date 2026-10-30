@@ -25,6 +25,14 @@ with sync_playwright() as pw:
    expected=sum(k['area']==area for k in kits)
    assert page.locator('article.kit:visible').count()==expected,(label,area)
   page.locator('[data-area-filter="all"]').click()
+  for level in sorted({k['level'] for k in kits}):
+   page.locator('[data-level-filter]').filter(has_text=level).click()
+   assert page.locator('article.kit:visible').count()==sum(k['level']==level for k in kits)
+   for area in sorted({k['area'] for k in kits}):
+    page.get_by_role('button',name=area,exact=True).click()
+    assert page.locator('article.kit:visible').count()==sum(k['level']==level and k['area']==area for k in kits)
+   page.locator('[data-area-filter="all"]').click()
+  page.locator('[data-level-filter="all"]').click()
   page.locator('#search').fill('termo-inexistente-xyz')
   assert page.locator('article.kit:visible').count()==0 and page.locator('#empty').is_visible()
   page.locator('#search').fill('')

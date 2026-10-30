@@ -1,12 +1,12 @@
 # Acervo didático — Heitor Cardoso Fernandes
 
-Aulas, apostilas, exercícios comentados e apresentações de apoio, organizados em 17 conjuntos e 33 PDFs.
+Aulas, apostilas, exercícios comentados e apresentações de apoio, organizados em 15 conjuntos e 30 PDFs.
 
 Site: https://heitorxr.github.io/acervo-didatico/
 
 ## Leitura
 
-O acervo permite buscar por tema, filtrar por área, consultar os conteúdos e abrir os PDFs sem navegar por código. Cada conjunto reúne o documento principal e seus complementos. As apresentações acadêmicas de jamovi e rotações/simetria estão identificadas como materiais de apoio, não como planos de aula.
+O acervo permite buscar por tema, filtrar por área, consultar os conteúdos e abrir os PDFs sem navegar por código. Cada conjunto reúne o documento principal e seus complementos. Os filtros de nível e de área podem ser combinados com a busca.
 
 O catálogo inclui Cálculo 1, funções de várias variáveis, integração, Geometria Analítica, nivelamento algébrico, preparação olímpica, Matemática para concursos e materiais de Física.
 
@@ -41,3 +41,11 @@ python tools/verify.py
 O primeiro comando requer PyMuPDF. O segundo requer Playwright e um Chrome disponível; o executável e a pasta de inspeção podem ser ajustados ao ambiente. Não é necessário compilar os documentos novamente para consultar ou reconstruir o índice.
 
 O primeiro aulão foi compilado a partir do LaTeX fornecido pelo autor. Os materiais preparados foram conferidos quanto a abertura, preservação do conteúdo fora das referências pessoais removidas e autoria das cópias públicas. Os PDFs e a navegação publicados são verificados antes da entrega.
+
+## Classificação por leitura do conteúdo
+
+Cada conjunto apresenta seu nível e a justificativa na ficha. A preparação olímpica é identificada pelos desafios POTI; o ensino médio/básico reúne álgebra elementar, concursos, trigonometria, mecânica e circuitos resistivos; o universitário reúne cálculo, vetores no espaço, estática 3D e LC/RLC por equações diferenciais. Nivelamento algébrico permanece no básico mesmo quando destinado a graduandos. Questões chamadas de desafios não tornam automaticamente uma aula de ensino médio uma aula olímpica.
+
+## Correção de curadoria
+
+Por esclarecimento do autor, Introdução ao jamovi não é de sua autoria e foi retirada. Materiais magnéticos é um trabalho acadêmico, e Rotações e simetria integra um projeto de iniciação científica: ambos foram retirados do acervo de aulas. Circuitos LC/RLC foi preservado separadamente. As cópias originais foram preservadas fora desta publicação; os commits anteriores não foram reescritos.

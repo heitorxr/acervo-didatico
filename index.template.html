@@ -108,8 +108,8 @@ dialog::backdrop { background:#10271db3; }
 <a class="skip" href="#materiais">Ir para os materiais</a>
 <header><div class="wrap topbar"><a class="brand" href="#inicio"><strong>Heitor Cardoso Fernandes</strong><small>Acervo didático</small></a><nav aria-label="Navegação principal"><a href="#materiais">Materiais</a><a class="extra-nav" href="#sobre">Sobre</a><a href="https://heitorxr.github.io/acervo-estatistica/" target="_blank" rel="noopener noreferrer">Projetos ↗</a></nav></div></header>
 <main class="wrap" id="inicio">
-<section class="hero"><p class="eyebrow">Ensino de exatas</p><h1>Aulas para compreender<br>e estudar com autonomia.</h1><p class="lead">Planos, apostilas, exercícios comentados e apresentações de apoio. Consulte os temas de cada conjunto e abra os materiais completos em PDF.</p></section>
-<section id="materiais" aria-labelledby="catalog-title"><div class="catalog-top"><h2 id="catalog-title">Materiais didáticos</h2><p class="count" id="result-count" role="status">__COUNT_LABEL__</p></div><label class="search-label" for="search">Buscar por tema</label><input class="search" id="search" type="search" placeholder="Ex.: derivadas, limites, Taylor" autocomplete="off"><div class="filters" role="group" aria-label="Filtrar por área">__FILTERS__</div><div class="grid" id="grid">__CARDS__</div><p class="empty" id="empty" hidden>Nenhum conjunto encontrado para essa busca.</p></section>
+<section class="hero"><p class="eyebrow">Ensino de exatas</p><h1>Aulas para compreender<br>e estudar com autonomia.</h1><p class="lead">Planos de aula, apostilas e exercícios comentados. Consulte os temas de cada conjunto e abra os materiais completos em PDF.</p></section>
+<section id="materiais" aria-labelledby="catalog-title"><div class="catalog-top"><h2 id="catalog-title">Materiais didáticos</h2><p class="count" id="result-count" role="status">__COUNT_LABEL__</p></div><label class="search-label" for="search">Buscar por tema</label><input class="search" id="search" type="search" placeholder="Ex.: derivadas, limites, Taylor" autocomplete="off"><p class="search-label">Nível e finalidade</p><div class="filters" role="group" aria-label="Filtrar por nível">__LEVEL_FILTERS__</div><p class="search-label">Área</p><div class="filters" role="group" aria-label="Filtrar por área">__FILTERS__</div><div class="grid" id="grid">__CARDS__</div><p class="empty" id="empty" hidden>Nenhum conjunto encontrado para essa busca.</p></section>
 <section class="about" id="sobre"><h2>Conceitos, exemplos<br>e resoluções.</h2><div><p>Este acervo reúne materiais de Heitor Cardoso Fernandes para aulas e estudo de exatas. Cada conjunto agrupa o documento principal e seus complementos; versões anteriores e cópias de trabalho não aparecem como aulas diferentes.</p><p>Os materiais apresentam explicações, exemplos resolvidos e atividades de consulta. Os créditos registrados nos documentos foram preservados. Livros e arquivos de terceiros usados como fonte de preparação não são redistribuídos aqui.</p></div></section>
 </main>
 <footer><div class="wrap"><strong>Heitor Cardoso Fernandes · Acervo didático</strong><a href="https://heitorxr.github.io/acervo-estatistica/" target="_blank" rel="noopener noreferrer">Conhecer os projetos de análise de dados ↗</a></div></footer>
@@ -121,10 +121,10 @@ const kits=JSON.parse(document.getElementById('catalog-data').textContent);
 const dialog=document.getElementById('kit-dialog');
 const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const normalized=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-let activeArea='all';
+let activeArea='all',activeLevel='all';
 function openKit(id){
  const k=kits.find(k=>k.id===id);if(!k)return;
- document.getElementById('dialog-body').innerHTML=`<p class="label">${escapeHtml(k.label)} · ${escapeHtml(k.audience)}</p><h2 id="detail-title">${escapeHtml(k.title)}</h2><p>${escapeHtml(k.summary)}</p><h3>Temas abordados</h3><ul>${k.topics.map(t=>`<li>${escapeHtml(t)}</li>`).join('')}</ul><h3>Conhecimentos prévios</h3><p>${escapeHtml(k.prerequisites)}</p><h3>Abrir os materiais</h3><div class="materials">${k.materials.map(m=>`<a class="material" href="${escapeHtml(m.file)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(m.label)} ↗</span><small>PDF · ${m.pages} ${m.pages===1?'página':'páginas'}</small></a>`).join('')}</div><p class="credit">${escapeHtml(k.credit)}</p>`;
+ document.getElementById('dialog-body').innerHTML=`<p class="label">${escapeHtml(k.label)} · ${escapeHtml(k.audience)}</p><h2 id="detail-title">${escapeHtml(k.title)}</h2><p>${escapeHtml(k.summary)}</p><h3>Nível e critério de classificação</h3><p><strong>${escapeHtml(k.level)}</strong> · ${escapeHtml(k.level_reason)}</p><h3>Temas abordados</h3><ul>${k.topics.map(t=>`<li>${escapeHtml(t)}</li>`).join('')}</ul><h3>Conhecimentos prévios</h3><p>${escapeHtml(k.prerequisites)}</p><h3>Abrir os materiais</h3><div class="materials">${k.materials.map(m=>`<a class="material" href="${escapeHtml(m.file)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(m.label)} ↗</span><small>PDF · ${m.pages} ${m.pages===1?'página':'páginas'}</small></a>`).join('')}</div><p class="credit">${escapeHtml(k.credit)}</p>`;
  if(!dialog.open)dialog.showModal();dialog.scrollTop=0;history.replaceState(null,'','#aula-'+k.id);
 }
 function closeKit(){dialog.close();history.replaceState(null,'','#materiais');}
@@ -134,7 +134,7 @@ dialog.addEventListener('cancel',e=>{e.preventDefault();closeKit();});
 dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeKit();});
 function filterKits(){
  const q=normalized(document.getElementById('search').value);let count=0;
- document.querySelectorAll('.kit').forEach(c=>{c.hidden=!normalized(c.dataset.search).includes(q)||(activeArea!=='all'&&c.dataset.area!==activeArea);if(!c.hidden)count++;});
+ document.querySelectorAll('.kit').forEach(c=>{c.hidden=!normalized(c.dataset.search).includes(q)||(activeArea!=='all'&&c.dataset.area!==activeArea)||(activeLevel!=='all'&&c.dataset.level!==activeLevel);if(!c.hidden)count++;});
  document.getElementById('result-count').textContent=count+' '+(count===1?'conjunto':'conjuntos')+' de materiais';
  document.getElementById('empty').hidden=count>0;
 }
@@ -144,6 +144,7 @@ document.querySelectorAll('[data-area-filter]').forEach(button=>button.addEventL
  document.querySelectorAll('[data-area-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
  filterKits();
 }));
+document.querySelectorAll('[data-level-filter]').forEach(button=>button.addEventListener('click',()=>{activeLevel=button.dataset.levelFilter;document.querySelectorAll('[data-level-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterKits();}));
 if(location.hash.startsWith('#aula-'))openKit(location.hash.slice(6));
 </script>
 </body>
