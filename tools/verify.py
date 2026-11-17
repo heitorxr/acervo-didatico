@@ -45,6 +45,12 @@ with sync_playwright() as pw:
    card.locator('[data-kit]').click()
    assert page.locator('#kit-dialog').is_visible()
    assert page.locator('#detail-title').inner_text()==k['title']
+   dialog_text=page.locator('#kit-dialog').inner_text()
+   for field in ['summary','audience','level_reason','prerequisites','credit']:
+    # The audience label is rendered uppercase by CSS; its wording must remain intact.
+    actual,expected=(dialog_text.casefold(),k[field].casefold()) if field=='audience' else (dialog_text,k[field])
+    assert expected in actual,(label,k['id'],field)
+   assert all(topic in dialog_text for topic in k['topics'])
    assert page.locator('.material').count()==len(k['materials'])
    assert page.locator('.material').evaluate_all('(nodes)=>nodes.map(n=>n.getAttribute("href"))')==[m['file'] for m in k['materials']]
    assert page.evaluate('document.querySelector("dialog").scrollWidth<=document.querySelector("dialog").clientWidth+1')

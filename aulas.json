@@ -70,7 +70,7 @@
   },
   {
     "id": "calculo-multivariado",
-    "title": "Funções de várias variáveis",
+    "title": "Cálculo multivariado",
     "label": "Aula teórica de Cálculo multivariado",
     "area": "Cálculo",
     "audience": "Estudantes de graduação",
@@ -179,8 +179,8 @@
     "title": "Manipulação algébrica básica",
     "label": "Nivelamento de Matemática",
     "area": "Matemática",
-    "audience": "Nivelamento para a graduação",
-    "summary": "Revisão de operações em equações e frações, destinada a estudantes que precisam retomar a base matemática antes de avançar nas disciplinas de exatas.",
+    "audience": "Calouros universitários — nivelamento para Pré-Cálculo",
+    "summary": "Material de nivelamento para calouros universitários com dificuldade em conceitos básicos de matemática, como preparação para Pré-Cálculo. Retoma operações com frações e manipulação de equações.",
     "topics": [
       "Igualdades e operações nos dois membros",
       "Manipulação de equações",
@@ -191,12 +191,12 @@
     "materials": [
       {
         "file": "pdfs/nivelamento-algebra.pdf",
-        "label": "Aula de nivelamento",
+        "label": "Material de nivelamento",
         "primary": true
       }
     ],
     "level": "Ensino médio / básico",
-    "level_reason": "Operações nos dois membros, equações e frações. Embora destinado a graduandos, o conteúdo é de nivelamento básico."
+    "level_reason": "Operações com equações e frações para nivelamento de calouros universitários antes de Pré-Cálculo."
   },
   {
     "id": "funcoes-olimpiadas",
@@ -243,7 +243,7 @@
       "Lista complementar: quadráticas e polinômios"
     ],
     "prerequisites": "Álgebra elementar e conceitos de função.",
-    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Na lista, o crédito de organização foi acrescentado por autorização do autor; foram preservadas as indicações SBM, OBMEP, ITA e UECE.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. A lista mantém as referências à SBM, à OBMEP, ao ITA e à UECE.",
     "materials": [
       {
         "file": "pdfs/poti-aula-2-quadraticas.pdf",
@@ -257,7 +257,7 @@
       }
     ],
     "level": "Matemática olímpica",
-    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+    "level_reason": "Material da sequência POTI, com problemas e argumentos de preparação olímpica."
   },
   {
     "id": "poti-aula-3-girard",
@@ -273,7 +273,7 @@
       "Exemplos e preparação para números complexos"
     ],
     "prerequisites": "Equações quadráticas, soma e produto e operações com polinômios.",
-    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
     "materials": [
       {
         "file": "pdfs/poti-aula-3-girard.pdf",
@@ -282,7 +282,7 @@
       }
     ],
     "level": "Matemática olímpica",
-    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+    "level_reason": "Material da sequência POTI, com problemas e argumentos de preparação olímpica."
   },
   {
     "id": "poti-aula-4-complexos",
@@ -299,7 +299,7 @@
       "Rotações e raízes da unidade"
     ],
     "prerequisites": "Álgebra, produtos notáveis, trigonometria elementar e coordenadas cartesianas.",
-    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
     "materials": [
       {
         "file": "pdfs/poti-aula-4-complexos.pdf",
@@ -308,7 +308,7 @@
       }
     ],
     "level": "Matemática olímpica",
-    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+    "level_reason": "Material da sequência POTI, com problemas e argumentos de preparação olímpica."
   },
   {
     "id": "poti-recorrencias",
@@ -316,7 +316,7 @@
     "label": "POTI — Nível 3",
     "area": "Matemática",
     "audience": "Preparação para olimpíadas de Matemática — POTI",
-    "summary": "A partir de um problema da Olimpíada Brasileira de Matemática, a aula constrói recorrências, desenrola produtos e somas telescópicas e relaciona o método à indução. O ZIP de origem tinha o nome regressão, mas o conteúdo é de recorrências.",
+    "summary": "A partir de um problema da Olimpíada Brasileira de Matemática, a aula constrói recorrências, desenrola produtos e somas telescópicas e relaciona o método à indução.",
     "topics": [
       "Condições iniciais e recorrências",
       "Produtos e somas telescópicos",
@@ -325,7 +325,7 @@
       "Recorrências com mais de um termo"
     ],
     "prerequisites": "Álgebra, sequências e operações com somatórios e produtos.",
-    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Crédito nominal acrescentado por autorização do autor; preservada a referência à XX Olimpíada Brasileira de Matemática, Problema 5.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Referência: XX Olimpíada Brasileira de Matemática, Problema 5.",
     "materials": [
       {
         "file": "pdfs/poti-recorrencias.pdf",
@@ -334,7 +334,7 @@
       }
     ],
     "level": "Matemática olímpica",
-    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+    "level_reason": "Material da sequência POTI, com problemas e argumentos de preparação olímpica."
   },
   {
     "id": "poti-simulados-algebra",
@@ -351,7 +351,7 @@
       "Revisão pendente de hipóteses e enunciados"
     ],
     "prerequisites": "Funções, polinômios, equações quadráticas e sequências.",
-    "credit": "Material didático de Heitor Cardoso Fernandes, recebido em fonte LaTeX do Overleaf. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. VERSÕES DE TRABALHO — revisão matemática pendente. No simulado de cinco questões, a questão 4 pressupõe três raízes reais incompatíveis com as demais condições. Nas resoluções do outro simulado, a questão 15 determina os valores nos inteiros positivos, mas não uma função única em todos os reais. Os documentos são de simulados distintos: as resoluções não são o gabarito das cinco questões.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. VERSÕES DE TRABALHO — revisão matemática pendente. No simulado de cinco questões, a questão 4 pressupõe três raízes reais incompatíveis com as demais condições. Nas resoluções do outro simulado, a questão 15 determina os valores nos inteiros positivos, mas não uma função única em todos os reais. Os documentos são de simulados distintos: as resoluções não são o gabarito das cinco questões.",
     "materials": [
       {
         "file": "pdfs/poti-simulado-algebra.pdf",
@@ -365,7 +365,7 @@
       }
     ],
     "level": "Matemática olímpica",
-    "level_reason": "Material da sequência POTI, identificado nos arquivos enviados pelo autor e pelo desenvolvimento de problemas e argumentos de preparação olímpica."
+    "level_reason": "Material da sequência POTI, com problemas e argumentos de preparação olímpica."
   },
   {
     "id": "fundamentos-funcoes-mecanica",
