@@ -1,5 +1,5 @@
 {
-  "kits": 20,
+  "kits": 19,
   "pdfs": [
     {
       "file": "pdfs/calculo-1-fundamentos.pdf",
@@ -180,11 +180,6 @@
       "file": "pdfs/eletricidade-ohm-exercicios.pdf",
       "pages": 2,
       "sha256": "cfa14aa5c3cbd6902911114565b618a385ca6f3adb2795d1e33723c7919270b4"
-    },
-    {
-      "file": "pdfs/circuitos-lc-rlc.pdf",
-      "pages": 13,
-      "sha256": "8c6357c486fe0ce1e48c0bb7ef23032a06edaa824c3342ebc1a6bd71836f1c0c"
     }
   ]
 }

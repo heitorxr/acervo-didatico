@@ -541,8 +541,8 @@
     "title": "Leis de Ohm e de Kirchhoff",
     "label": "Aula e exercícios de eletricidade",
     "area": "Física",
-    "audience": "Estudo de eletricidade",
-    "summary": "Apresentação sobre aplicação das leis de Kirchhoff e uma lista de exercícios de Lei de Ohm, com problemas de corrente, resistência e potência.",
+    "audience": "Cursinho pré-vestibular VCNP",
+    "summary": "Aula ministrada no cursinho pré-vestibular VCNP, com aplicação das leis de Kirchhoff e exercícios de Lei de Ohm sobre corrente, resistência e potência.",
     "topics": [
       "Corrente, resistência e tensão",
       "Lei de Ohm e resistividade",
@@ -565,30 +565,5 @@
     ],
     "level": "Ensino médio / básico",
     "level_reason": "Leis de Ohm e Kirchhoff aplicadas a resistores e malhas por equações algébricas, sem equações diferenciais."
-  },
-  {
-    "id": "magnetismo-circuitos",
-    "title": "Circuitos LC e RLC",
-    "label": "Circuitos oscilatórios",
-    "area": "Física",
-    "audience": "Estudo de Física em nível superior",
-    "summary": "Estudo dos circuitos LC e RLC, com equações diferenciais, oscilações livres e forçadas, amortecimento e ressonância.",
-    "topics": [
-      "Circuito LC ideal",
-      "Equações diferenciais de segunda ordem",
-      "Amortecimento",
-      "Circuito RLC com fonte externa e ressonância"
-    ],
-    "prerequisites": "Eletricidade, magnetismo e cálculo.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Os créditos e as referências dos documentos originais foram preservados.",
-    "materials": [
-      {
-        "file": "pdfs/circuitos-lc-rlc.pdf",
-        "label": "Circuitos LC e RLC",
-        "primary": true
-      }
-    ],
-    "level": "Universitário",
-    "level_reason": "Circuitos LC/RLC por equações diferenciais de segunda ordem, amortecimento, solução forçada e ressonância."
   }
 ]

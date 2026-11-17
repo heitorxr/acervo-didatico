@@ -57,5 +57,17 @@ class EditorialCatalogTests(unittest.TestCase):
         self.assertIn('VERSÕES DE TRABALHO', BY_ID['poti-simulados-algebra']['credit'])
 
 
+class ArchiveSelectionTests(unittest.TestCase):
+    def test_ohm_kirchhoff_identifies_vcnp(self):
+        kit = BY_ID['eletricidade-ohm-kirchhoff']
+        self.assertIn('VCNP', kit['audience'])
+        self.assertIn('pré-vestibular', kit['summary'])
+
+    def test_unconfirmed_lc_rlc_lesson_is_not_published(self):
+        self.assertNotIn('magnetismo-circuitos', BY_ID)
+        self.assertFalse((ROOT / 'pdfs/circuitos-lc-rlc.pdf').exists())
+        self.assertFalse((ROOT / 'assets/magnetismo-circuitos.png').exists())
+
+
 if __name__ == '__main__':
     unittest.main()

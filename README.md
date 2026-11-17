@@ -1,6 +1,6 @@
 # Acervo didático — Heitor Cardoso Fernandes
 
-Aulas, apostilas, exercícios comentados e apresentações de apoio, organizados em 20 conjuntos e 37 PDFs.
+Aulas, apostilas, exercícios comentados e apresentações de apoio, organizados em 19 conjuntos e 36 PDFs.
 
 Site: https://heitorxr.github.io/acervo-didatico/
 
@@ -44,7 +44,7 @@ Compilei o primeiro aulão a partir dos meus arquivos LaTeX. Os materiais prepar
 
 ## Classificação por leitura do conteúdo
 
-Cada conjunto apresenta seu nível e a justificativa na ficha. A preparação olímpica reúne a sequência de aulas e os simulados POTI; o ensino médio/básico reúne álgebra elementar, concursos, trigonometria, mecânica e circuitos resistivos; o universitário reúne cálculo, vetores no espaço, estática 3D e LC/RLC por equações diferenciais. Nivelamento algébrico permanece no básico mesmo quando destinado a graduandos. Questões chamadas de desafios não tornam automaticamente uma aula de ensino médio uma aula olímpica.
+Cada conjunto apresenta seu nível e a justificativa na ficha. A preparação olímpica reúne a sequência de aulas e os simulados POTI; o ensino médio/básico reúne álgebra elementar, concursos, trigonometria, mecânica e circuitos resistivos; o universitário reúne cálculo, vetores no espaço e estática 3D. Nivelamento algébrico permanece no básico mesmo quando destinado a graduandos. Questões chamadas de desafios não tornam automaticamente uma aula de ensino médio uma aula olímpica.
 
 ## Materiais em LaTeX do Overleaf
 
@@ -54,4 +54,4 @@ A sequência POTI inclui as aulas 1 a 4 e a aula de recorrências. A lista de qu
 
 ## Correção de curadoria
 
-Retirei Introdução ao jamovi por ser material de terceiros. Materiais magnéticos é um trabalho acadêmico, e Rotações e simetria integra um projeto de iniciação científica: ambos foram retirados do acervo de aulas. Circuitos LC/RLC foi preservado separadamente. As cópias originais foram preservadas fora desta publicação; os commits anteriores não foram reescritos.
+Retirei Introdução ao jamovi por ser material de terceiros. Materiais magnéticos é um trabalho acadêmico, e Rotações e simetria integra um projeto de iniciação científica: ambos foram retirados do acervo de aulas. Retirei Circuitos LC/RLC do acervo de aulas por não ter confirmação de que ministrei esse material. As cópias originais foram preservadas fora desta publicação; os commits anteriores não foram reescritos.

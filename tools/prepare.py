@@ -5,7 +5,7 @@ import pymupdf
 ROOT=Path(__file__).resolve().parents[1]
 plan_path=Path(sys.argv[1]);plan=json.loads(plan_path.read_text(encoding='utf-8'))
 assert plan['authorship_confirmed'] is True
-excluded={'pdfs/introducao-jamovi.pdf','pdfs/materiais-magneticos.pdf','pdfs/rotacoes-simetria.pdf'}
+excluded={'pdfs/introducao-jamovi.pdf','pdfs/materiais-magneticos.pdf','pdfs/rotacoes-simetria.pdf','pdfs/circuitos-lc-rlc.pdf'}
 assert not any(m['file'] in excluded for k in plan['kits'] for m in k['materials']), 'Plano antigo: contém materiais retirados por correção de autoria/escopo'
 (ROOT/'pdfs').mkdir(exist_ok=True)
 catalog=[];report=[]
