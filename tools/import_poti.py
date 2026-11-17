@@ -1,10 +1,11 @@
 """Import the authorized POTI PDFs, preserving originals and avoiding duplicates."""
 from pathlib import Path
 from collections import Counter
-import argparse,json,hashlib,re
+import argparse,json,hashlib,re,shutil
 import pymupdf
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source_project',type=Path)
+parser.add_argument('--simulados-only',action='store_true',help='Preserve the other already published PDFs byte-for-byte.')
 args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[1];SRC=args.source_project.resolve()
 assert (SRC/'compilacao.json').is_file()
@@ -13,20 +14,32 @@ assert len(compiled)==8 and all(r['compiler_exit']==0 for r in compiled)
 CAT=ROOT/'aulas.json';catalog=json.loads(CAT.read_text(encoding='utf-8'))
 existing={k['id']:k for k in catalog}
 base_credit='Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.'
-def material(key,label,primary=False,warning=False):
- source=SRC/'pdfs'/(key+'.pdf');dest=ROOT/'pdfs'/(key+'.pdf')
+def material(key,label,primary=False):
+ reviewed=key in {'poti-simulado-algebra','poti-simulado-resolucoes'}
+ source=(SRC/'revisoes' if reviewed else SRC)/'pdfs'/(key+'.pdf');dest=ROOT/'pdfs'/(key+'.pdf')
+ if args.simulados_only and not reviewed:
+  assert dest.is_file(),dest
+  return {'file':'pdfs/'+dest.name,'label':label,'primary':primary}
+ if reviewed:
+  records=json.loads((SRC/'revisoes'/'compilacao.json').read_text(encoding='utf-8'))
+  record=next(row for row in records if row['id']==key)
+  assert hashlib.sha256(source.read_bytes()).hexdigest()==record['pdf_sha256']
+  assert hashlib.sha256((SRC/'revisoes'/(key+'.tex')).read_bytes()).hexdigest()==record['source_sha256']
  before=hashlib.sha256(source.read_bytes()).hexdigest()
  doc=pymupdf.open(source);original_text='\n'.join(p.get_text() for p in doc)
  result=pymupdf.open();result.insert_pdf(doc)
  for page in result:
   for link in list(page.get_links()):
    if link.get('uri','').startswith('file:'):page.delete_link(link)
- if warning:
-  area=pymupdf.Rect(25,12,result[0].rect.width-25,42)
-  assert not any(area.intersects(pymupdf.Rect(w[:4])) for w in result[0].get_text('words'))
-  assert result[0].insert_textbox(area,'VERSÃO DE TRABALHO: revisão matemática pendente. Consulte a nota no acervo.',fontsize=8.5,fontname='helv',color=(.6,.18,.08))>=0
+
  result.set_metadata({'title':label,'author':'Heitor Cardoso Fernandes','subject':'POTI — preparação para olimpíadas de Matemática.'})
- result.save(dest,garbage=4,deflate=True,clean=True);result.close();doc.close()
+ if reviewed:
+  assert not re.search(r'(?i)vers[ãõ]o de trabalho|versões de trabalho|em revisão|revisão matemática pendente',original_text+str(doc.metadata))
+  assert not any(link.get('uri','').startswith('file:') for page in doc for link in page.get_links())
+  shutil.copy2(source,dest)
+ else:
+  result.save(dest,garbage=4,deflate=True,clean=True)
+ result.close();doc.close()
  with pymupdf.open(dest) as check:
   new_text='\n'.join(p.get_text() for p in check)
   assert Counter(original_text.split())<=Counter(new_text.split()),'Unexpected academic-content loss'
@@ -41,8 +54,8 @@ new.append(kit('poti-aula-2-quadraticas','Funções quadráticas e revisão de f
 new.append(kit('poti-aula-3-girard','Relações de Girard e raízes de polinômios','Aula 3 POTI','Dedução das relações entre raízes e coeficientes em graus 2 e 3, generalização, revisão de somatórios e exemplos de aplicação. A aula encerra com uma introdução aos números complexos.',['Raízes e coeficientes','Relações de Girard em graus 2 e 3','Generalização e somatórios','Exemplos e preparação para números complexos'],'Equações quadráticas, soma e produto e operações com polinômios.',[material('poti-aula-3-girard','Aula 3 — Relações de Girard',True)]))
 new.append(kit('poti-aula-4-complexos','Números complexos e aplicações olímpicas','Aula 4 POTI','Aula sobre forma algébrica, operações, conjugado, plano complexo, módulo e argumento. Desenvolve as formas trigonométrica e exponencial, De Moivre, raízes da unidade e aplicações geométricas.',['Forma algébrica e operações','Conjugado, módulo e argumento','Formas trigonométrica e exponencial','De Moivre e raízes n-ésimas','Rotações e raízes da unidade'],'Álgebra, produtos notáveis, trigonometria elementar e coordenadas cartesianas.',[material('poti-aula-4-complexos','Aula 4 — Números complexos',True)]))
 new.append(kit('poti-recorrencias','Relações de recorrência, telescopagem e indução','POTI — Nível 3','A partir de um problema da Olimpíada Brasileira de Matemática, a aula constrói recorrências, desenrola produtos e somas telescópicas e relaciona o método à indução.',['Condições iniciais e recorrências','Produtos e somas telescópicos','Indução matemática','Transformação por ponto fixo','Recorrências com mais de um termo'],'Álgebra, sequências e operações com somatórios e produtos.',[material('poti-recorrencias','Aula — Relações de recorrência',True)],base_credit+' Referência: XX Olimpíada Brasileira de Matemática, Problema 5.'))
-review_note='VERSÕES DE TRABALHO — revisão matemática pendente. No simulado de cinco questões, a questão 4 pressupõe três raízes reais incompatíveis com as demais condições. Nas resoluções do outro simulado, a questão 15 determina os valores nos inteiros positivos, mas não uma função única em todos os reais. Os documentos são de simulados distintos: as resoluções não são o gabarito das cinco questões.'
-new.append(kit('poti-simulados-algebra','Simulados de álgebra e resoluções — versões de trabalho','POTI · materiais de avaliação em revisão','Dois documentos distintos: um simulado com cinco questões e resoluções das questões 11 e 15 de outro simulado. Versões históricas de trabalho, com pontos que exigem revisão antes do uso como avaliação ou gabarito final.',['Polinômios e divisibilidade','Funções periódicas','Raízes, coeficientes e relações algébricas','Somas parciais e recorrências','Revisão pendente de hipóteses e enunciados'],'Funções, polinômios, equações quadráticas e sequências.',[material('poti-simulado-algebra','Simulado — Cinco questões de álgebra (em revisão)',True,True),material('poti-simulado-resolucoes','Outro simulado — Resoluções das questões 11 e 15 (em revisão)',False,True)],base_credit+' '+review_note))
+review_note='Os documentos são de simulados distintos: as resoluções das questões 11 e 15 não são o gabarito das cinco questões. A questão 4 considera raízes complexas, contadas com multiplicidade. A questão 15 determina os valores da função nos inteiros positivos; os demais valores reais são livres. A questão 11 justifica por indução a persistência da desigualdade a partir do índice 6.'
+new.append(kit('poti-simulados-algebra','Simulados de álgebra e resoluções','POTI · materiais de avaliação','Dois documentos distintos: um simulado com cinco questões de álgebra e resoluções das questões 11 e 15 de outro simulado.',['Polinômios e divisibilidade','Funções periódicas','Raízes complexas e relações de Girard','Somas parciais e valores de funções','Recorrências e indução'],'Funções, polinômios, equações quadráticas, números complexos e sequências.',[material('poti-simulado-algebra','Simulado — Cinco questões de álgebra',True),material('poti-simulado-resolucoes','Outro simulado — Resoluções das questões 11 e 15')],base_credit+' '+review_note))
 # Retain the previously published first lesson and its historical date.
 existing['funcoes-olimpiadas']['label']='Aula 1 POTI e desafios de composição'
 ids={k['id'] for k in new}
@@ -52,5 +65,5 @@ catalog[position:position]=new
 assert len({k['id'] for k in catalog})==len(catalog)
 CAT.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 report={'kits':len(catalog),'pdfs':len({m['file'] for k in catalog for m in k['materials']}),'poti_kits':sum(k['level']=='Matemática olímpica' for k in catalog),'new_kits':[k['id'] for k in new],'new_pdfs':[m['file'] for k in new for m in k['materials']],'review_note':review_note,'first_lesson_existing_pdf_preserved':True}
-(SRC/'importacao-publica.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+(SRC/'revisoes'/'importacao-publica.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(report,ensure_ascii=False,indent=2))

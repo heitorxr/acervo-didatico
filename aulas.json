@@ -338,29 +338,29 @@
   },
   {
     "id": "poti-simulados-algebra",
-    "title": "Simulados de álgebra e resoluções — versões de trabalho",
-    "label": "POTI · materiais de avaliação em revisão",
+    "title": "Simulados de álgebra e resoluções",
+    "label": "POTI · materiais de avaliação",
     "area": "Matemática",
     "audience": "Preparação para olimpíadas de Matemática — POTI",
-    "summary": "Dois documentos distintos: um simulado com cinco questões e resoluções das questões 11 e 15 de outro simulado. Versões históricas de trabalho, com pontos que exigem revisão antes do uso como avaliação ou gabarito final.",
+    "summary": "Dois documentos distintos: um simulado com cinco questões de álgebra e resoluções das questões 11 e 15 de outro simulado.",
     "topics": [
       "Polinômios e divisibilidade",
       "Funções periódicas",
-      "Raízes, coeficientes e relações algébricas",
-      "Somas parciais e recorrências",
-      "Revisão pendente de hipóteses e enunciados"
+      "Raízes complexas e relações de Girard",
+      "Somas parciais e valores de funções",
+      "Recorrências e indução"
     ],
-    "prerequisites": "Funções, polinômios, equações quadráticas e sequências.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. VERSÕES DE TRABALHO — revisão matemática pendente. No simulado de cinco questões, a questão 4 pressupõe três raízes reais incompatíveis com as demais condições. Nas resoluções do outro simulado, a questão 15 determina os valores nos inteiros positivos, mas não uma função única em todos os reais. Os documentos são de simulados distintos: as resoluções não são o gabarito das cinco questões.",
+    "prerequisites": "Funções, polinômios, equações quadráticas, números complexos e sequências.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Os documentos são de simulados distintos: as resoluções das questões 11 e 15 não são o gabarito das cinco questões. A questão 4 considera raízes complexas, contadas com multiplicidade. A questão 15 determina os valores da função nos inteiros positivos; os demais valores reais são livres. A questão 11 justifica por indução a persistência da desigualdade a partir do índice 6.",
     "materials": [
       {
         "file": "pdfs/poti-simulado-algebra.pdf",
-        "label": "Simulado — Cinco questões de álgebra (em revisão)",
+        "label": "Simulado — Cinco questões de álgebra",
         "primary": true
       },
       {
         "file": "pdfs/poti-simulado-resolucoes.pdf",
-        "label": "Outro simulado — Resoluções das questões 11 e 15 (em revisão)",
+        "label": "Outro simulado — Resoluções das questões 11 e 15",
         "primary": false
       }
     ],

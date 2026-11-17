@@ -12,11 +12,9 @@ O catálogo inclui Cálculo 1, cálculo multivariado, integração, Geometria An
 
 ## Curadoria e autoria
 
-- As cópias e revisões do mesmo material não foram contadas como conjuntos diferentes.
 - Nos meus materiais que ainda não tinham assinatura, incluí meu crédito de autoria em espaço livre, preservando as explicações e os exercícios.
 - Os nomes dos alunos foram retirados das cópias e dos nomes dos arquivos públicos. Os originais foram preservados.
 - As referências e os créditos existentes nos materiais foram mantidos, incluindo a inspiração no material da professora Evelin no segundo aulão de Cálculo 1 e as listas de CMI012 na aula de vetores.
-- Livros, listas de professores e outros arquivos de terceiros usados como fonte de preparação não foram redistribuídos como materiais de minha autoria.
 - A curadoria e a organização do site tiveram apoio de IA. Não foi realizada uma nova revisão matemática integral de todos os materiais históricos.
 
 A publicação do acervo não atribui uma nova licença aos materiais e referências de terceiros.
@@ -48,7 +46,7 @@ Cada conjunto apresenta seu nível e a justificativa na ficha. A preparação ol
 
 ## Materiais em LaTeX do Overleaf
 
-A sequência POTI inclui as aulas 1 a 4 e a aula de recorrências. A lista de quadráticas/polinômios é complemento da aula 2; os dois documentos de simulado estão agrupados, sem tratá-los como uma única prova ou como gabarito um do outro. A Aula 1 não foi duplicada. Incluí créditos nominais nos três materiais que ainda não os continham, preservando as fontes das questões de terceiros. Os simulados estão claramente marcados como versões de trabalho, com pontos de revisão descritos nas fichas e aviso nos PDFs. Datas automáticas de recompilação não comprovam quando as aulas ocorreram.
+A sequência POTI inclui as aulas 1 a 4 e a aula de recorrências. A lista de quadráticas/polinômios é complemento da aula 2; os dois documentos de simulado estão agrupados, sem tratá-los como uma única prova ou como gabarito um do outro. A Aula 1 não foi duplicada. Incluí créditos nominais nos três materiais que ainda não os continham, preservando as fontes das questões de terceiros. Datas automáticas de recompilação não comprovam quando as aulas ocorreram.
 
 `tools/import_poti.py CAMINHO_DO_PROJETO_PRIVADO` prepara as cópias autorizadas e o catálogo, sem publicar os ZIPs/fontes privados.
 

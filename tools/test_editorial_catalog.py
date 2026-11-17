@@ -33,6 +33,18 @@ class EditorialCatalogTests(unittest.TestCase):
             with self.subTest(kit=kit['id']):
                 self.assertNotRegex(json.dumps(kit, ensure_ascii=False), EDITORIAL_HANDOFF)
 
+    def test_removed_editorial_disclaimers_do_not_regenerate(self):
+        patterns = [
+            r'versões\W+anteriores\W+e\W+cópias\W+de\W+trabalho',
+            r'(?:livros|arquivos|listas)[^.\n]*terceiros[^.\n]*fonte\W+de\W+preparação',
+            r'cópias\W+e\W+revisões\W+do\W+mesmo\W+material',
+        ]
+        for name in ['index.template.html', 'index.html', 'README.md']:
+            text = (ROOT / name).read_text(encoding='utf-8')
+            for pattern in patterns:
+                with self.subTest(file=name, pattern=pattern):
+                    self.assertNotRegex(text, re.compile(pattern, re.IGNORECASE))
+
     def test_readme_uses_the_portfolio_owners_voice(self):
         self.assertNotRegex((ROOT / 'README.md').read_text(encoding='utf-8'), EDITORIAL_HANDOFF)
 
@@ -54,7 +66,15 @@ class EditorialCatalogTests(unittest.TestCase):
         for source in ['SBM', 'OBMEP', 'ITA', 'UECE']:
             self.assertIn(source, BY_ID['poti-aula-2-quadraticas']['credit'])
         self.assertIn('XX Olimpíada Brasileira de Matemática', BY_ID['poti-recorrencias']['credit'])
-        self.assertIn('VERSÕES DE TRABALHO', BY_ID['poti-simulados-algebra']['credit'])
+        self.assertNotIn('versões de trabalho', BY_ID['poti-simulados-algebra']['credit'].lower())
+
+    def test_simulados_are_published_without_work_in_progress_labels(self):
+        kit = BY_ID['poti-simulados-algebra']
+        self.assertEqual(kit['title'], 'Simulados de álgebra e resoluções')
+        self.assertNotRegex(json.dumps(kit, ensure_ascii=False), r'(?i)versões de trabalho|em revisão|revisão pendente|revisão matemática pendente')
+        importer = (ROOT / 'tools/import_poti.py').read_text(encoding='utf-8')
+        self.assertNotIn('VERSÕES DE TRABALHO', importer)
+        self.assertIn("'revisoes'", importer)
 
 
 class ArchiveSelectionTests(unittest.TestCase):
