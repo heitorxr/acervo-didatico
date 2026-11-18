@@ -76,6 +76,13 @@ class EditorialCatalogTests(unittest.TestCase):
         self.assertNotRegex(json.dumps(kit, ensure_ascii=False), EDITORIAL_HANDOFF)
         self.assertNotRegex((ROOT / 'tools/import_poti.py').read_text(encoding='utf-8'), EDITORIAL_HANDOFF)
 
+    def test_derivatives_credit_keeps_only_the_approved_attribution(self):
+        self.assertEqual(
+            BY_ID['calculo-1-derivadas']['credit'],
+            'O material registra a inspiração no material didático da professora Evelin. '
+            'Os exercícios extras foram elaborados para esta aula.',
+        )
+
     def test_third_party_references_remain_identified(self):
         self.assertIn('Evelin', BY_ID['calculo-1-derivadas']['credit'])
         self.assertIn('CMI012', BY_ID['geometria-analitica']['credit'])
