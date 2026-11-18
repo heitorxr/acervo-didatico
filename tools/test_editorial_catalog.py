@@ -48,6 +48,22 @@ class EditorialCatalogTests(unittest.TestCase):
     def test_readme_uses_the_portfolio_owners_voice(self):
         self.assertNotRegex((ROOT / 'README.md').read_text(encoding='utf-8'), EDITORIAL_HANDOFF)
 
+    def test_single_pdf_cards_use_the_singular(self):
+        index = (ROOT / 'index.html').read_text(encoding='utf-8')
+        self.assertNotRegex(index, r'\b1 PDFs no conjunto\b')
+        self.assertIn('1 PDF no conjunto', index)
+        self.assertIn('2 PDFs no conjunto', index)
+
+    def test_compilation_date_note_is_central(self):
+        note = 'A data de compilação dos PDFs nem sempre corresponde à data em que a aula foi dada.'
+        template = (ROOT / 'index.template.html').read_text(encoding='utf-8')
+        self.assertEqual(template.count(note), 1)
+        for kit in CATALOG:
+            with self.subTest(kit=kit['id']):
+                self.assertNotIn('data do PDF é de compilação', kit['credit'])
+                self.assertNotIn('não comprova a data da aula', kit['credit'])
+        self.assertNotIn('não comprova a data da aula', (ROOT / 'tools/import_poti.py').read_text(encoding='utf-8'))
+
     def test_poti_importer_keeps_the_same_editorial_voice(self):
         # Execute only the pure metadata helpers, never PDF import or filesystem writes.
         tree = ast.parse((ROOT / 'tools/import_poti.py').read_text(encoding='utf-8'))
@@ -67,6 +83,13 @@ class EditorialCatalogTests(unittest.TestCase):
             self.assertIn(source, BY_ID['poti-aula-2-quadraticas']['credit'])
         self.assertIn('XX Olimpíada Brasileira de Matemática', BY_ID['poti-recorrencias']['credit'])
         self.assertNotIn('versões de trabalho', BY_ID['poti-simulados-algebra']['credit'].lower())
+
+    def test_simulado_credits_do_not_publish_a_correction_log(self):
+        credit = BY_ID['poti-simulados-algebra']['credit']
+        self.assertIn('simulados distintos', credit)
+        for phrase in ['A questão 4 considera', 'A questão 15 determina', 'A questão 11 justifica']:
+            self.assertNotIn(phrase, credit)
+            self.assertNotIn(phrase, (ROOT / 'tools/import_poti.py').read_text(encoding='utf-8'))
 
     def test_simulados_are_published_without_work_in_progress_labels(self):
         kit = BY_ID['poti-simulados-algebra']

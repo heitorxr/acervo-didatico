@@ -243,7 +243,7 @@
       "Lista complementar: quadráticas e polinômios"
     ],
     "prerequisites": "Álgebra elementar e conceitos de função.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. A lista mantém as referências à SBM, à OBMEP, ao ITA e à UECE.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. A lista mantém as referências à SBM, à OBMEP, ao ITA e à UECE.",
     "materials": [
       {
         "file": "pdfs/poti-aula-2-quadraticas.pdf",
@@ -273,7 +273,7 @@
       "Exemplos e preparação para números complexos"
     ],
     "prerequisites": "Equações quadráticas, soma e produto e operações com polinômios.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados.",
     "materials": [
       {
         "file": "pdfs/poti-aula-3-girard.pdf",
@@ -299,7 +299,7 @@
       "Rotações e raízes da unidade"
     ],
     "prerequisites": "Álgebra, produtos notáveis, trigonometria elementar e coordenadas cartesianas.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados.",
     "materials": [
       {
         "file": "pdfs/poti-aula-4-complexos.pdf",
@@ -325,7 +325,7 @@
       "Recorrências com mais de um termo"
     ],
     "prerequisites": "Álgebra, sequências e operações com somatórios e produtos.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Referência: XX Olimpíada Brasileira de Matemática, Problema 5.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Referência: XX Olimpíada Brasileira de Matemática, Problema 5.",
     "materials": [
       {
         "file": "pdfs/poti-recorrencias.pdf",
@@ -351,7 +351,7 @@
       "Recorrências e indução"
     ],
     "prerequisites": "Funções, polinômios, equações quadráticas, números complexos e sequências.",
-    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Onde a fonte usa data automática, a data do PDF é de compilação e não comprova a data da aula. Os documentos são de simulados distintos: as resoluções das questões 11 e 15 não são o gabarito das cinco questões. A questão 4 considera raízes complexas, contadas com multiplicidade. A questão 15 determina os valores da função nos inteiros positivos; os demais valores reais são livres. A questão 11 justifica por indução a persistência da desigualdade a partir do índice 6.",
+    "credit": "Material didático de Heitor Cardoso Fernandes. Créditos e referências originais preservados. Os documentos são de simulados distintos: as resoluções das questões 11 e 15 não são o gabarito das cinco questões.",
     "materials": [
       {
         "file": "pdfs/poti-simulado-algebra.pdf",
